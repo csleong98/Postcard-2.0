@@ -1,0 +1,135 @@
+/* Font Family */
+
+body {
+
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 16px;
+}
+
+.postcard {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 22px);
+    grid-gap: 16px;
+}
+
+#text-box {
+    padding: 16px;
+    grid-row: span 6;
+    grid-column: span 8;
+    background-color: #F9D56E;
+}
+
+#text-box > p {
+    font-family: ;
+    font-size: x-large;
+}
+
+#illustration-box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    grid-row: span 6;
+    grid-column: span 4;
+    background-color: #E8505B;
+}
+
+#illustration-box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    grid-row: span 6;
+    grid-column: span 4;
+    background-color: #14B1AB;
+}
+
+#illustration-box-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    grid-row: span 6;
+    grid-column: span 4;
+    background-color: #F3ECC2;
+}
+
+#illustration-box-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    grid-row: span 6;
+    grid-column: span 4;
+    background-color: #F9D56E;
+}
+
+
+@media (min-width: 425px) {
+    .container {
+        width: 375px;
+    }
+    .postcard-container {
+        grid-column: span 12;
+        background: #48fa8f;
+        border: 1px solid #000000;
+    }
+    
+    .controls-container {
+        grid-column: span 12;
+        background: #1a81d0;
+        border: 1px solid #000000;
+    }
+}
+
+@media (max-width: 992px){
+    .container {
+        width: 970px;
+    }
+
+    .postcard-container {
+        grid-column: span 12;
+        background: #cbd781;
+        border: 1px solid #000000;
+    }
+    
+    .controls-container {
+        grid-column: span 12;
+        background: #1a81d0;
+        border: 1px solid #000000;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 985px;
+    }
+
+    .postcard-container {
+        grid-column: span 9;
+        background: #ffffff;
+        border: 1px solid #000000;
+    }
+    
+    .controls-container {
+        grid-column: span 3;
+        background: #ffffff;
+        border: 1px solid #000000;
+    }
+}
+
+
