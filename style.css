@@ -34,6 +34,48 @@ header {
 
 }
 
+.controls-container {
+    color: #3C3C3C;
+    background-color: #ffffff;
+}
+
+.selection-box {
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.selection-box:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #08c089;
+    -moz-box-shadow: inset 0px 0px 0px 2px #08c089;
+    box-shadow: inset 0px 0px 0px 2px #08c089;
+}
+
+.colors {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.color-dot {
+    height: 25px;
+    width: 25px;
+    background-color: #F9D56E;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.25);
+}
+
+.controls-title {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +102,8 @@ header {
     grid-row: span 6;
     grid-column: span 8;
     background-color: #F9D56E;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4em;
 }
 
 #text-box > p {
@@ -118,9 +162,7 @@ header {
     }
     
     .controls-container {
-        grid-column: span 12;
-        background: #1a81d0;
-        border: 1px solid #000000;
+        grid-column: span 12
     }
 }
 
@@ -136,9 +178,7 @@ header {
     }
     
     .controls-container {
-        grid-column: span 12;
-        background: #1a81d0;
-        border: 1px solid #000000;
+        grid-column: span 12
     }
 }
 
@@ -155,8 +195,6 @@ header {
     
     .controls-container {
         grid-column: span 3;
-        background: #ffffff;
-        border: 1px solid #000000;
     }
 }
 
