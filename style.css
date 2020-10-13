@@ -1,9 +1,80 @@
 /* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600&display=swap');
+
 
 body {
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(220,220,220,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(220,220,220,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(220,220,220,0.75);
+    margin-bottom: 2em;
+}
+
+.title {
+    text-align: center;
+    padding-top: 0.1em;
+    margin: auto;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3rem;
+    color: #08C089;
+}
+
+.sub-title {
+    text-align: center;
+    padding: 0 0.5em 1em;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1rem;
+    color: #3C3C3C;
 
 }
 
+.controls-container {
+    color: #3C3C3C;
+    background-color: #ffffff;
+}
+
+.selection-box {
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.selection-box:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #08c089;
+    -moz-box-shadow: inset 0px 0px 0px 2px #08c089;
+    box-shadow: inset 0px 0px 0px 2px #08c089;
+}
+
+.colors {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.color-dot {
+    height: 25px;
+    width: 25px;
+    background-color: #F9D56E;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.25);
+}
+
+.controls-title {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
 
 .container {
     margin-left: auto;
@@ -31,10 +102,11 @@ body {
     grid-row: span 6;
     grid-column: span 8;
     background-color: #F9D56E;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4em;
 }
 
 #text-box > p {
-    font-family: ;
     font-size: x-large;
 }
 
@@ -90,9 +162,7 @@ body {
     }
     
     .controls-container {
-        grid-column: span 12;
-        background: #1a81d0;
-        border: 1px solid #000000;
+        grid-column: span 12
     }
 }
 
@@ -108,9 +178,7 @@ body {
     }
     
     .controls-container {
-        grid-column: span 12;
-        background: #1a81d0;
-        border: 1px solid #000000;
+        grid-column: span 12
     }
 }
 
@@ -127,8 +195,6 @@ body {
     
     .controls-container {
         grid-column: span 3;
-        background: #ffffff;
-        border: 1px solid #000000;
     }
 }
 
